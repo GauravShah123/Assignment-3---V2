@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaurav Shah's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+    <link rel="shortcut icon" href="favicon2.svg" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <nav cursor-class="overlay">
+        <a href="#" class="logo">GAURAV SHAH</a>
+        <ul>
+            <li class="internal-links"><a onclick="scrollToBlogs();">BLOG</a></li>
+            <li class="internal-links"><a href="#posters">POSTERS</a></li>
+            <li><a href="https://www.linkedin.com/in/gaurav-shah-177110216/">LINKEDIN <span
+                        class="material-symbols-outlined">north_east</span></a></li>
+            <li><a href="https://gaurav.studio/">PORTFOLIO <span class="material-symbols-outlined">north_east</span></a>
+            </li>
+            <li><button onclick="scrollToContact();">GET IN TOUCH</button></li>
+        </ul>
+    </nav>
+    <!-- Code copied from: https://codepen.io/yp786/pen/MWodGVr
+        Author: yash
+        Name: Custom Cursor - Circle Follows The Mouse Pointer
+        Description: Makes a yellow cursor circle that follows the mouse pointer with delay
+        Date retrieved: Nov. 18, 2023 -->
+
+    <!-- Copied Code Starts -->
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+    <!-- Copied code ends -->
+    <section class="header" cursor-class="arrow" onclick="scrollToContact();">
+        <h1>GAURAV <br>SHAH</h1>
+        <p>Building meaningful products with a human lens by combining UX, business & engineering to drive business
+            growth.</p>
+        <button class="header-cta" onclick="scrollToContact();">GET IN TOUCH</button>
+    </section>
+    <section class="about">
+        <h1>Gaurav Shah is an
+            <span class="hover-add-why" cursor-class="find-out-why-pm" onclick="scrollToPM()">
+                aspiring product manager
+                <!-- TAKE TO STORY ABOUT ME -->
+            </span> currently studying <span class="hover-change-text" id="GBDA">GBDA
+
+            </span>
+            at the <span class="hover-show-image" id="stratford" cursor-class="stratford">University of Waterloo's
+                Stratford School of Interaction Design & Business</span>.
+        </h1>
+        <p class="about-image-credit">Image Credit: University of Waterloo</p>
+    </section>
+    <section class="blogs-wrapper" id="blogs-wrapper">
+        <div class="blogs-wapper-top-content">
+            <h1 class="biggest-h1">Blog Articles</h1>
+            <p class="blogs-wrapper-p p-after-biggest-h1 margin-top">In my quest to keep learning about new things in
+                the world of
+                business, UX, and
+                tech, I decided to start this blog to write about everything from theory to case studies I witnessed in
+                real life. I hope you learn something, and if you have any thoughts or comments, please reach out at <a
+                    href="mailto:gshah@uwaterloo.ca">gshah@uwaterloo.ca</a>.</p>
+        </div>
+        <table id="blogs" class="blogs">
+            <tr>
+                <td>
+                    <a class="blog" href="blog1.html">
+                        <img src="https://images.unsplash.com/photo-1683064867580-064b447419cc?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Product Lifecycle (What’s that?)" title="Photo by Hussain Niyaz on Unsplash">
+                        <div class="blog-content">
+                            <h1>Product Lifecycle (What’s that?)</h2>
+                                <ul class="tags">
+                                    <li>Product</li>
+                                    <li>Glossary</li>
+                                </ul>
+                                <p class="blog-desc">On my quest to become a product manager, I've delved deep into the
+                                    intricacies
+                                    of the business world, seeking to understand the life and evolution of products. So,
+                                    let’s
+                                    explore the product lifecycle - a dynamic framework that governs the birth, growth,
+                                    and
+                                    eventual
+                                    decline of products in the market.</p>
+                                <button>READ ARTICLE</button>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a class="blog" href="blog2.html">
+                        <img src="https://images.unsplash.com/photo-1660733344431-f6a440cb7c6e?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Notes from 'How to Win Friends and Influence People'"
+                            title="Photo by Melanie Stander on Unsplash">
+                        <div class="blog-content">
+                            <h1>Notes from 'How to Win Friends and Influence People'</h2>
+                                <ul class="tags">
+                                    <li>Product Management</li>
+                                    <li>Social</li>
+                                </ul>
+                                <p class="blog-desc">On my quest to become a product manager, I've delved deep into the
+                                    intricacies
+                                    of the business world, seeking to understand the life and evolution of products. So,
+                                    let’s
+                                    explore the product lifecycle - a dynamic framework that governs the birth, growth,
+                                    and
+                                    eventual
+                                    decline of products in the market.</p>
+                                <button>READ ARTICLE</button>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="blog" href="blog3.html">
+                        <img src="https://images.unsplash.com/photo-1609619385076-36a873425636?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="The Science Behind Memory and Its Implications for UX"
+                            title="Photo by Nejc Soklič on Unsplash">
+                        <div class="blog-content">
+                            <h1>The Science Behind Memory and Its Implications for UX</h2>
+                                <ul class="tags">
+                                    <li>UX Design</li>
+                                    <li>Pyschology</li>
+                                </ul>
+                                <p class="blog-desc">Understanding how our brains work is essential for creating great
+                                    user
+                                    experiences. In this blog article, I want to explore some fascinating psychology
+                                    concepts
+                                    about memory and understand how they relate to everyday UX design.</p>
+                                <button>READ ARTICLE</button>
+                        </div>
+                    </a>
+                </td>
+
+
+                <td>
+                    <a class="blog" href="blog4.html">
+                        <img src="https://images.unsplash.com/photo-1633113088983-12fb3b2fe0ac?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Unconventional Skills needed to be a Product Manager"
+                            title="Photo by Microsoft 365 on Unsplash">
+                        <div class="blog-content">
+                            <h1>Unconventional Skills needed to be a Product Manager</h2>
+                                <ul class="tags">
+                                    <li>Product Management</li>
+                                </ul>
+                                <p class="blog-desc">Empathy is the ability to understand and share the feelings of
+                                    others.
+                                    As a
+                                    product manager, you need to put yourself in the shoes of your users, imagining
+                                    their
+                                    experiences, frustrations, and needs. For example, when designing a new mobile app,
+                                    empathizing with users will help you create a user-friendly interface that meets
+                                    their
+                                    expectations.</p>
+                                <button>READ ARTICLE</button>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Posters -->
+    <section class="posters" id="posters">
+        <h1 class="biggest-h1">
+            My Posters
+        </h1>
+        <p class="p-after-biggest-h1 margin-top">
+            In my free time, I like to design random stuff. Recently, I've been toying around with poster design. It
+            started as an activity when I was bored, but after iterating on my designs and getting them printed, I'm
+            happy to announce that I have my own poster line. Here are a few of my designs.
+        </p>
+        <table class="posters-table">
+            <tr>
+                <td>
+                    <img src="poster1.png" alt="Poster Design">
+                </td>
+                <td>
+                    <img src="poster2.png" alt="Poster Design">
+                </td>
+                <td>
+                    <img src="poster3.png" alt="Poster Design">
+                </td>
+                <td>
+                    <img src="poster4.png" alt="Poster Design">
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- why PM -->
+    <section class="whyPM" id="whyPM">
+        <h1 class="biggest-h1">Why Product?</h1>
+        <p class="p-after-biggest-h1 margin-top">The story of why I got into product management...</p>
+        <p class="whyPM-p">My journey into product management traces back to my early days, when I ran a design agency
+            in grade 8,
+            linking folks globally through design. That's where the love affair with design's impact began. Then, a high
+            school finance competition sparked my fascination with money's role in growth. Business and finance became
+            my focus. But tech sneaked in during another round of that competition. I hopped on the coding train,
+            learning Python and then diving into frontend languages.
+            <br><br>
+            In this pursuit, a revelation struck—why pick just one passion? Enter product management: a blend
+            of creativity, business, and tech. It's like discovering the perfect mix for my interests. To level up, I've
+            taken on competitions, joined clubs, and dived deep into learning. My leadership skills sharpened as Vice
+            President at GBDA Society and Technical Director at QTPOC, while my hunger for learning led me through
+            Harvard's Computer Science course (CS50) and into Google's UX Design Certification.
+            <br><br>
+            Now, here I am, pumped to bring this mix of creativity, business chops, and tech wizardry to the table in my
+            upcoming co-op in Fall 2024.
+        </p>
+    </section>
+    <!-- Contact form  -->
+    <section class="contact-form" id="contact-form">
+        <h1 class="biggest-h1">Get in Touch</h1>
+        <p class="p-after-biggest-h1">Whether it's for a co-op, freelance project or just a coffee chat, I'm always down
+            to chat :)</p>
+        <form>
+            <div class="form-field-group">
+                <div class="form-field">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="abc@xyz.com">
+                </div>
+            </div>
+            <div class="form-field">
+                <label for="sup">What's up?</label><br>
+                <textarea type="text" id="sup" name="sup"> </textarea>
+            </div>
+            <button type="submit" value="Submit" onclick="submitContactForm()">SUBMIT</button>
+        </form>
+        <div class="confirmation">
+            <span class="material-symbols-outlined">
+                done
+            </span>
+            Thank you for reaching out! I will get back to you shortly.
+        </div>
+    </section>
+    <section class="footer">
+        <p>Made with love, fueled by black coffee.</p>
+        <button id="backToTopBtn">
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </button>
+    </section>
+</body>
+
+</html>
